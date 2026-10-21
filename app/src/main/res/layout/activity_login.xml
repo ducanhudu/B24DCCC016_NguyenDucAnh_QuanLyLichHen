@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center" android:padding="28dp" android:background="@color/surface">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="QUẢN LÝ SÁCH" android:textStyle="bold" android:textSize="26sp" android:textColor="@color/ink"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Thư viện cá nhân của bạn" android:textColor="@color/muted" android:textSize="15sp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="36dp" android:orientation="vertical" android:background="@drawable/bg_card" android:padding="20dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đăng nhập" android:textStyle="bold" android:textSize="20sp" android:textColor="@color/ink"/>
+        <EditText android:id="@+id/etUsername" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:hint="Tên đăng nhập" android:inputType="text" android:background="@drawable/bg_input"/>
+        <EditText android:id="@+id/etPassword" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="Mật khẩu" android:inputType="textPassword" android:background="@drawable/bg_input"/>
+        <TextView android:id="@+id/tvLoginError" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:textColor="#C62828" android:visibility="gone"/>
+        <Button android:id="@+id/btnLogin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="Đăng nhập" android:textColor="@color/white" android:background="@drawable/bg_primary"/>
+    </LinearLayout>
+</LinearLayout>
