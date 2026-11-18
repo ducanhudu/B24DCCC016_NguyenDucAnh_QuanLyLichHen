@@ -1,0 +1,25 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="@color/surface">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Chi tiết lịch hẹn" android:textSize="28sp" android:textStyle="bold" android:textColor="@color/ink"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" android:orientation="vertical" android:background="@drawable/bg_card" android:padding="22dp">
+            <TextView android:id="@+id/tvDetailTitle" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="25sp" android:textStyle="bold" android:textColor="@color/ink"/>
+            <TextView style="@style/FieldLabel" android:layout_marginTop="28dp" android:text="Địa điểm"/>
+            <TextView android:id="@+id/tvDetailLocation" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" android:textSize="18sp" android:textColor="@color/ink"/>
+            <TextView style="@style/FieldLabel" android:layout_marginTop="24dp" android:text="Thời gian"/>
+            <TextView android:id="@+id/tvDetailTime" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" android:textSize="18sp" android:textColor="@color/ink"/>
+            <Switch android:id="@+id/swDetailReminder" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="24dp" android:minHeight="56dp" android:text="Nhắc nhở" android:textSize="18sp"
+                android:textColor="@color/ink" android:saveEnabled="false"/>
+            <TextView android:id="@+id/tvReminderStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/muted"/>
+        </LinearLayout>
+        <Button android:id="@+id/btnBack" style="@style/SecondaryButton" android:layout_marginTop="28dp" android:text="Quay lại"/>
+        <Button android:id="@+id/btnDeleteAppointment" style="@style/PrimaryButton" android:layout_marginTop="12dp"
+            android:background="@drawable/bg_danger" android:text="Xóa lịch hẹn"/>
+    </LinearLayout>
+</ScrollView>

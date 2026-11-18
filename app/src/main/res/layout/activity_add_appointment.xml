@@ -1,0 +1,26 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="@color/surface">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Thêm lịch hẹn"
+            android:textSize="28sp" android:textStyle="bold" android:textColor="@color/ink"/>
+        <TextView style="@style/FieldLabel" android:layout_marginTop="24dp" android:text="Tên lịch hẹn" android:labelFor="@id/etTitle"/>
+        <EditText android:id="@+id/etTitle" style="@style/FormInput" android:hint="Ví dụ: Họp nhóm đồ án"
+            android:inputType="textCapSentences" android:maxLines="3" android:gravity="top|start"/>
+        <TextView style="@style/FieldLabel" android:layout_marginTop="16dp" android:text="Địa điểm" android:labelFor="@id/etLocation"/>
+        <EditText android:id="@+id/etLocation" style="@style/FormInput" android:hint="Ví dụ: Phòng B203"
+            android:inputType="textCapSentences" android:maxLines="3" android:gravity="top|start"/>
+        <TextView style="@style/FieldLabel" android:layout_marginTop="20dp" android:text="Ngày hẹn" android:labelFor="@id/datePicker"/>
+        <DatePicker android:id="@+id/datePicker" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:datePickerMode="spinner" android:calendarViewShown="false" android:spinnersShown="true"/>
+        <TextView style="@style/FieldLabel" android:layout_marginTop="12dp" android:text="Giờ hẹn" android:labelFor="@id/timePicker"/>
+        <TimePicker android:id="@+id/timePicker" android:layout_width="match_parent" android:layout_height="wrap_content" android:timePickerMode="spinner"/>
+        <TextView android:id="@+id/tvDateError" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:textColor="@color/danger" android:accessibilityLiveRegion="polite" android:visibility="gone"/>
+        <Switch android:id="@+id/swReminder" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="56dp" android:layout_marginTop="12dp" android:text="Nhắc nhở trước giờ hẹn"
+            android:textSize="16sp" android:textColor="@color/ink" android:checked="true" android:saveEnabled="true"/>
+        <Button android:id="@+id/btnSaveAppointment" style="@style/PrimaryButton" android:layout_marginTop="20dp" android:text="Lưu lịch hẹn"/>
+        <Button android:id="@+id/btnBack" style="@style/SecondaryButton" android:layout_marginTop="10dp" android:text="Quay lại"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,5 +1,18 @@
 plugins { id 'com.android.application' }
 
-android { namespace 'com.example.quanlysach'; compileSdk 35
-    defaultConfig { applicationId 'com.example.quanlysach'; minSdk 23; targetSdk 35; versionCode 1; versionName '1.0' }
+android {
+    namespace 'com.example.quanlylichhen'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'com.example.quanlylichhen'
+        minSdk 23
+        targetSdk 35
+        versionCode 1
+        versionName '1.0'
+        testInstrumentationRunner 'com.example.quanlylichhen.AppointmentTestRunner'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
